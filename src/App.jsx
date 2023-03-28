@@ -1,5 +1,10 @@
+import Story from "./components/Story";
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Story />
+    </div>
+  );
 };
 
 export default App;
