@@ -1,8 +1,8 @@
-import Story from "./components/Story";
+import HomeBanner from "./components/HomeBanner";
 const App = () => {
   return (
     <div>
-      <Story />
+      <HomeBanner />
     </div>
   );
 };

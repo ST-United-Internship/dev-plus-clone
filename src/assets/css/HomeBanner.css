@@ -1,0 +1,141 @@
+.header-container {
+  overflow: hidden;
+}
+
+.backgroud-header {
+  background-image: url("https://devplus.edu.vn/assets/images/devplus/Devplus_missions.png");
+  padding: 124px 0 425px;
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+
+.banner-container {
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner-tittle {
+  text-align: center !important;
+}
+
+.heading-tittle {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize !important;
+  font-family: nunito, sans-serif;
+}
+
+.banner-content {
+  text-align: center !important;
+}
+
+.banner-content p {
+  text-align: center !important;
+  font-size: 20px;
+  line-height: 30px;
+  color: #505050;
+  font-family: rubik, sans-serif;
+  font-weight: 400;
+}
+
+.banner-btn {
+  text-align: center !important;
+}
+
+.banner-btn a {
+  border: 1x solid #ff5421;
+  color: #fff;
+  background: #ff5421;
+  padding: 16px 58px;
+  border-radius: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: rubik, sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1366px) {
+  .banner-container {
+    /* max-width: 1170px; */
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .heading-tittle {
+    font-size: 45px;
+  }
+  .banner-container .banner-btn {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .heading-tittle {
+    font-size: 40px;
+  }
+  .banner-container .banner-btn {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heading-tittle {
+    font-size: 35px;
+  }
+  .banner-container .banner-btn {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .heading-tittle {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .banner-btn a {
+    padding: 10px 30px !important;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .heading-tittle {
+    font-size: 25px;
+  }
+  .banner-btn {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .heading-tittle {
+    font-size: 20px;
+  }
+  .banner-btn {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  .heading-tittle {
+    font-size: 20px;
+  }
+  .banner-btn {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 50px) {
+  .heading-tittle {
+    font-size: 20px;
+  }
+  .banner-btn {
+    max-width: 100px;
+  }
+}
