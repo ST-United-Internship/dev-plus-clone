@@ -1174,13 +1174,17 @@ chalk@^4.0.0, chalk@^4.1.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 classlist-polyfill@^1.0.3:
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ab43a7d (feat: about road to devplus ui)
 classlist-polyfill@^1.2.0:
 =======
 classlist-polyfill@^1.0.3:
 >>>>>>> dbf269d (feat: about road to devplus ui)
+<<<<<<< HEAD
 >>>>>>> ab43a7d (feat: about road to devplus ui)
 =======
 classlist-polyfill@^1.0.3:
@@ -1188,6 +1192,8 @@ classlist-polyfill@^1.0.3:
 =======
 classlist-polyfill@^1.0.3:
 >>>>>>> 51cf897 (chore: yarn.lock)
+=======
+>>>>>>> ab43a7d (feat: about road to devplus ui)
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
   integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
