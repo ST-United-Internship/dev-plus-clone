@@ -22,7 +22,7 @@ export const Campus = () => {
       >
         <Col span={16} className="campus-container">
           <h2>Our main campus</h2>
-          <Row style={{ gap: "43px" }}>
+          <Row justify="space-between">
             {lsData.data.map((data, index) => (
               <Col
                 span={24}
