@@ -9,6 +9,7 @@
       "experimentalObjectRestSpread": true,
       "jsx": true
     },
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["react"],
@@ -17,7 +18,6 @@
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
-    "react/jsx-uses-vars": "error",
-    "linebreak-style": ["error",  "windows"]
+    "react/jsx-uses-vars": "error"
   }
 }
