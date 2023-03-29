@@ -4,26 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/story.css";
 import StoryItem from "./StoryItem";
-import { getUserStories } from "../../../api/devplus-api";
-import { useQuery } from "@tanstack/react-query";
 import { settings } from "./StorySlideConfig";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 
-const Story = () => {
-  const { isLoading, error, data, isFetching } = useQuery({
-    queryKey: ["repoData"],
-    queryFn: () => getUserStories(),
-  });
-
+const Story = ({ stories }) => {
   useEffect(() => {
     AOS.init();
   });
-
-  if (isLoading) return "Loading...";
-
-  if (error) return "An error has occurred: " + error.message;
 
   return (
     <>
@@ -51,12 +40,11 @@ const Story = () => {
             offset={4}
           >
             <Slider {...settings}>
-              {data.map((e) => (
+              {stories?.map((e) => (
                 <StoryItem key={e.id} userStory={e} />
               ))}
             </Slider>
           </Col>
-          <div>{isFetching ? "Updating..." : ""}</div>
         </Row>
       </div>
     </>

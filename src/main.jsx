@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { QueryClient, QueryClientProvider } from "react-query";
 import axios from "axios";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 

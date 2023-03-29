@@ -1,11 +1,9 @@
-import HomeBanner from "./components/HomeBanner";
-import Story from "./components/Story/Story";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <HomeBanner />
-      <Story />
+      <Home />
     </div>
   );
 };

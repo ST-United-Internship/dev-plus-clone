@@ -5,6 +5,9 @@ export const settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
   swipeToSlide: true,
+  autoplaySpeed: 2000,
+  autoplay: true,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 768,
