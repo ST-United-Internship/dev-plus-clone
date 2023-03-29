@@ -1,8 +1,14 @@
-import Story from "./components/Story";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { AboutRoad } from "./components/AboutRoad";
+
+const queryClient = new QueryClient();
+
 const App = () => {
   return (
     <div>
-      <Story />
+      <QueryClientProvider client={queryClient}>
+        <AboutRoad />
+      </QueryClientProvider>
     </div>
   );
 };
