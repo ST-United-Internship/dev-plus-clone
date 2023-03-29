@@ -1,5 +1,5 @@
 .about-road {
-  margin: -60px auto 0;
+  margin: -63px auto 0;
 }
 
 .about-container {
@@ -13,6 +13,7 @@
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #226fb7;
+  margin-top: 0;
 }
 
 .about-container > h2 {
@@ -25,9 +26,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #505050;
-}
-
-.road-container {
+  margin: 0;
 }
 
 .road-container > h4 {
@@ -39,6 +38,7 @@
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .road-container > ul {
@@ -70,6 +70,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .about-container,
   .about-road {
     margin-top: 70px;
   }

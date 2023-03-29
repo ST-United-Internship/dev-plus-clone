@@ -1,29 +1,15 @@
 import { Row, Col, Grid } from "antd";
 import { useEffect } from "react";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../assets/css/about-road.css";
+import { useRoad } from "../hooks/useRoad";
+import { useAbout } from "../hooks/useAbout";
 const { useBreakpoint } = Grid;
 
-const api = "http://localhost:3000/";
-
 export const AboutRoad = () => {
-  const aboutData = useQuery({
-    queryKey: ["about"],
-    queryFn: async ({ queryKey }) => {
-      const result = await axios.get(api + queryKey);
-      return result.data;
-    },
-  });
-  const lsData = useQuery({
-    queryKey: ["road"],
-    queryFn: async ({ queryKey }) => {
-      const result = await axios.get(api + queryKey);
-      return result.data;
-    },
-  });
+  const aboutData = useAbout();
+  const lsData = useRoad();
   const { xs, sm, lg } = useBreakpoint();
   useEffect(() => {
     Aos.init({ duration: 2000, once: true, easing: "ease-in-out" });
@@ -38,7 +24,7 @@ export const AboutRoad = () => {
               className="about-container"
               span={24}
               style={{
-                padding: xs ? "40px 30px 90px" : "60px 60px 110px",
+                padding: xs ? "40px 30px 50px" : "60px 60px 70px",
               }}
               lg={{ span: 14 }}
             >
