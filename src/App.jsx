@@ -1,8 +1,9 @@
-import Story from "./components/Story";
+import Footer from "./components/Footer";
+// import Story from "./components/Story";
 const App = () => {
   return (
     <div>
-      <Story />
+      <Footer />
     </div>
   );
 };

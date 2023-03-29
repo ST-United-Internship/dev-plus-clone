@@ -1,0 +1,52 @@
+{
+  "footer": [
+    {
+      "id": 1,
+      "title": "DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.",
+      "values": "Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing"
+    },
+
+    {
+      "id": 2,
+      "title": "FOR DEVPLUS",
+      "values": ["Training space", "Alumni network", "Connect with experts"]
+    },
+
+    {
+      "id": 3,
+      "title": "OUR CAMPUS",
+      "values": [
+        "One plus (+) Programing foundation",
+        "Alumni network",
+        "Connect with experts"
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "ADDRESS",
+      "values": [
+        {
+          "icon": "EnvironmentOutlined",
+          "value": "116 - 118 Đường Mai Thúc Lân, Mỹ An, Ngũ Hành Sơn, Đà Nẵng"
+        },
+
+        {
+          "icon": "PhoneOutlined",
+          "value": "(+84) 368492885"
+        },
+
+        {
+          "icon": "MailOutlined",
+          "value": "Hello@devplus.edu.vn"
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "image": "https://devplus.edu.vn/assets/images/devplus/Artboard_2.png",
+      "titleFooterBottom": "Facebook"
+    }
+  ]
+}
