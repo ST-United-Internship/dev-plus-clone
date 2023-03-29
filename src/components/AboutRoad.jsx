@@ -39,7 +39,6 @@ export const AboutRoad = () => {
               span={24}
               style={{
                 padding: xs ? "40px 30px 90px" : "60px 60px 110px",
-                marginTop: lg ? "0" : "70px",
               }}
               lg={{ span: 14 }}
             >
