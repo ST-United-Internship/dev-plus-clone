@@ -1,7 +1,7 @@
 {
   "name": "react-js",
   "private": true,
-  "version": "0n.0.0",
+  "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
