@@ -26,5 +26,20 @@
       "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
       "image": "https://devplus.edu.vn/assets/images/devplus/person2.png"
     }
-  ]
+  ],
+   "road": [
+    {
+      "id": 1,
+      "title": "Apply Devplus"
+    },
+    { "id": 2, "title": "Testing and Interview" },
+    { "id": 3, "title": "1st plus (+) campus" },
+    { "id": 4, "title": "2nd plus (++) campus" },
+    { "id": 5, "title": "Onboard & start your career" }
+  ],
+  "about": {
+    "id": 0,
+    "title": "The Fact: Skilled labour shortage for software companies but full of freshers and low level juniors",
+    "desc": "Our responsibility is filling the gap between the quality of graduate students and the quality of engineers. Devplus will help reducing the cost of re-training and accelerating the skill-up progress of students and freshers."
+  }
 }
