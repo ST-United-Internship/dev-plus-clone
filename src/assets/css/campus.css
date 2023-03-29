@@ -1,0 +1,100 @@
+.popular-courses {
+  background-image: url(https://devplus.edu.vn/assets/images/bg/home-8-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 94px;
+  padding-bottom: 70px;
+}
+
+.campus-container h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: nunito, sans-serif;
+  color: #111;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+
+.course-item {
+  padding: 30px;
+  border: 1px solid #dfe9eb;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.course-item > div {
+  margin-bottom: 30px;
+}
+
+.course-item img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.course-item h3 {
+  font-size: 24px;
+  color: #111;
+  margin: 0 0 26px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1366px) {
+  .course-item h3 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .course-item h3 {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .course-item h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .campus-container h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .campus-container h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .campus-container h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .campus-container h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .campus-container h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .popular-courses {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .popular-courses {
+    padding-top: 64px;
+  }
+}

@@ -1,0 +1,56 @@
+import { Row, Col } from "antd";
+import { useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "../assets/css/campus.css";
+
+export const Campus = () => {
+  const lsData = useQuery({
+    queryKey: ["campus"],
+    queryFn: ({ queryKey }) => {
+      return axios
+        .get("http://localhost:3000/" + queryKey)
+        .then((result) => result.data);
+    },
+  });
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true, easing: "ease-in-out" });
+  }, []);
+  return (
+    !lsData.isLoading && (
+      <Row
+        justify="center"
+        className="popular-courses"
+        style={{
+          backgroundImage:
+            "url(	https://devplus.edu.vn/assets/images/bg/home-8-bg.jpg)",
+        }}
+      >
+        <Col span={16} className="campus-container">
+          <h2>Our main campus</h2>
+          <Row style={{ gap: "43px" }}>
+            {lsData.data.map((data, index) => (
+              <Col
+                span={24}
+                data-aos="fade-up"
+                data-aos-delay={`${(index + 3) * 100}`}
+                md={{ span: 11 }}
+                lg={{ span: 7 }}
+                key={index}
+              >
+                <div className="course-item">
+                  <div>
+                    <img src={data.img}></img>
+                  </div>
+                  <h3>{data.title}</h3>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+    )
+  );
+};
