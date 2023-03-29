@@ -1,4 +1,5 @@
 import HomeBanner from "./components/HomeBanner";
+
 const App = () => {
   return (
     <div>
