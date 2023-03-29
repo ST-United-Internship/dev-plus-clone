@@ -13,7 +13,6 @@
   width: 95%;
   height: auto;
   overflow: auto;
-  /* height: 500px; */
   position: relative;
 }
 
@@ -80,7 +79,6 @@
 .slick-dots li button {
   width: 100%;
   border-radius: 10px;
-  /* more CSS */
 }
 .slick-dots li button::before {
   content: none;
