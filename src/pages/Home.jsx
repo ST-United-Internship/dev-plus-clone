@@ -5,6 +5,8 @@ import { useGetStories } from "../hooks/useGetStroies";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import { AboutRoad } from "../components/AboutRoad";
+import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
 
 const Home = () => {
   useEffect(() => {
@@ -15,9 +17,12 @@ const Home = () => {
 
   const { data: stories } = useGetStories();
 
+  const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
+
   return (
     <>
       <HomeBanner homeBannerData={homeBannerData} />
+      {!loadAboutRoad && <AboutRoad aboutRoadData={aboutRoadData} />}
       <Story stories={stories} />
     </>
   );
