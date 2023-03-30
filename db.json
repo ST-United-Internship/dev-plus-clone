@@ -133,5 +133,17 @@
       "courses": "Work ethic, Integrity",
       "image": "https://devplus.edu.vn/assets/images/categories/icons/9.png"
     }
-  ]
+  ],
+  "aboutroad": {
+    "id": 0,
+    "title": "The Fact: Skilled labour shortage for software companies but full of freshers and low level juniors",
+    "desc": "Our responsibility is filling the gap between the quality of graduate students and the quality of engineers. Devplus will help reducing the cost of re-training and accelerating the skill-up progress of students and freshers.",
+    "road": [
+      { "id": 1, "title": "Apply Devplus" },
+      { "id": 2, "title": "Testing and Interview" },
+      { "id": 3, "title": "1st plus (+) campus" },
+      { "id": 4, "title": "2nd plus (++) campus" },
+      { "id": 5, "title": "Onboard & start your career" }
+    ]
+  }
 }

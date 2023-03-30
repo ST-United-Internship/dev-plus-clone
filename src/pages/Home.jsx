@@ -9,6 +9,8 @@ import Aos from "aos";
 import Footer from "../components/Footer";
 import SkillGrid from "../components/SkillsGrid";
 import { Loading } from "../components/Loading";
+import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
+import { AboutRoad } from "../components/AboutRoad";
 
 const Home = () => {
   useEffect(() => {
@@ -21,11 +23,15 @@ const Home = () => {
 
   const { data: footerData, isLoading: loadFooterData } = useGetFooter();
 
-  if (loadStories || loadBanner || loadFooterData) return <Loading />;
+  const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
+
+  if (loadStories || loadBanner || loadFooterData || loadAboutRoad)
+    return <Loading />;
 
   return (
     <>
       <HomeBanner homeBannerData={homeBannerData} />
+      <AboutRoad aboutRoadData={aboutRoadData} />
       <SkillGrid />
       <Story stories={stories} />
       <Footer footerData={footerData} />
