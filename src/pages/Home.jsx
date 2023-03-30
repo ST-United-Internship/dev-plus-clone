@@ -24,6 +24,7 @@ const Home = () => {
 
   const { data: homeBannerData, isLoading: loadBanner } = useGetBanner();
 
+<<<<<<< HEAD
   const { data: campusData, isLoading: loadCampusData } = useGetCampus();
 
   const { data: stories, isLoading: loadStories } = useGetStories();
@@ -43,16 +44,29 @@ const Home = () => {
     loadAdmin
   )
     return <Loading />;
+=======
+  const { data: footerData, isLoading: loadFooterData } = useGetFooter();
+
+  const { data: admin } = useGetAdmin();
+>>>>>>> 7ab2047 (feat: admin ui)
+
+  const { data: stories } = useGetStories();
 
   return (
     <>
       <HomeBanner homeBannerData={homeBannerData} />
       <AboutRoad aboutRoadData={aboutRoadData} />
       <SkillGrid />
+<<<<<<< HEAD
       <Campus campusData={campusData} />
       <Admin admin={admin} />
       <Story stories={stories} />
       <Footer footerData={footerData} />
+=======
+      <Admin admin={admin} />
+      <Story stories={stories} />
+      {!loadFooterData && <Footer footerData={footerData} />}
+>>>>>>> 7ab2047 (feat: admin ui)
     </>
   );
 };

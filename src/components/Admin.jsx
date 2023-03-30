@@ -16,16 +16,14 @@ const Admin = ({ admin }) => {
             <div class="chu">
               <h2>Admission for 2021</h2>
               <p class="line-one">
-                Disclaimer: This position is expected to start around Feb 2022
-                and continue through the entire Summer term. We ask for a
-                minimum of 12 weeks, full-time, for most internships. Please
-                consider before submitting an application.
+                <>
+                  <div>{admin?.Disclaimer}</div>
+                </>
               </p>
               <p class="line-two">
-                Devplus aims to provide students the chance to work with our
-                clients and awesome mentors to level up your programing skillset
-                in the RIGHT path. With your education and experience, you will
-                be able to take on real-world challenges from day one.
+                <>
+                  <div>{admin?.title}</div>
+                </>
               </p>
             </div>
 

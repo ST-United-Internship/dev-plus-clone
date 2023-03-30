@@ -168,11 +168,11 @@
     }
   ],
 
-  "admin": [
-    {
-      "title": "anhadmin",
-      "courses": "admin",
-      "image": "https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png"
-    }
-  ]
+  "admin": {
+    "title": "anhadmin",
+    "courses": "admin",
+    "image": "https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png",
+    "Disclaimer": "Disclaimer: This position is expected to start around Feb 2022 and continue through the entire Summer term. We ask for a minimum of 12 weeks, full-time, for most internships. Please consider before submitting an application.",
+    "title": "Devplus aims to provide students the chance to work with our clients and awesome mentors to level up your programming skillset in the RIGHT path. With your education and experience, you will be able to take on real-world challenges from day one."
+  }
 }
