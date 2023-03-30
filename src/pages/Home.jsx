@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import Footer from "../components/Footer";
 import SkillGrid from "../components/SkillsGrid";
+import { useGetCampus } from "../hooks/useCampus";
+import { Campus } from "../components/Campus";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +17,8 @@ const Home = () => {
   }, []);
 
   const { data: homeBannerData } = useGetBanner();
+
+  const { data: campusData, isLoading: loadCampusData } = useGetCampus();
 
   const { data: stories } = useGetStories();
 
@@ -24,6 +28,7 @@ const Home = () => {
     <>
       <HomeBanner homeBannerData={homeBannerData} />
       <SkillGrid />
+      {!loadCampusData && <Campus campusData={campusData} />}
       <Story stories={stories} />
       {!loadFooterData && <Footer footerData={footerData} />}
     </>

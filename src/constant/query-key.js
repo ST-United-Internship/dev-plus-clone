@@ -1,5 +1,6 @@
 export const QUERY_KEY = {
   BANNER: "BANNER",
+  CAMPUS: "CAMPUS",
   STORIES: "STORIES",
   FOOTER: "FOOTER",
 };

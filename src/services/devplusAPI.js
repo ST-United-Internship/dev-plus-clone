@@ -5,6 +5,10 @@ export const getHomeBannerAPI = () => {
   return axios.get(API_URL.BANNER);
 };
 
+export const getCampusAPI = () => {
+  return axios.get(API_URL.CAMPUS);
+};
+
 export const getStoriesAPI = () => {
   return axios.get(API_URL.STORIES);
 };
