@@ -1,208 +1,68 @@
-.item-container {
-  margin-right: 0px !important;
-  padding: 0px !important;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.skill-container {
+  width: 100%;
+  padding: 100px 0;
+  margin: 0;
 }
 
-.gutter-row {
-  max-width: 393px !important;
-  height: 132px !important;
-  border-radius: 5px;
+.skill-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #dfe9eb;
-  color: black;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
 }
 
-.gutter-row:hover {
-  background: #226fb7;
-  border-color: #226fb7;
-  transition: all 0.5s ease;
-}
-
-.gutter-row:hover .text-title .title {
-  color: #ffffff;
-  border-color: #226fb7;
-  transition: all 0.2s ease;
-}
-
-.gutter-row:hover .text-title .courses {
-  color: #ffffff;
-  border-color: #226fb7;
-  transition: all 0.2s ease;
-}
-
-.container-card:hover {
-  color: white;
-}
-
-.gutter-row:hover .image-item {
-  margin-left: 15px;
-  width: 70px;
-  height: 70px;
-  background: white !important;
-  padding: 23px;
+.skill-item .item-img {
+  display: flex;
+  width: 100px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  margin-top: 31px;
-  margin-right: 25px;
-  transition: all 0.5s ease;
-}
-
-.image-item {
-  margin-left: 15px;
-  width: 70px;
-  height: 70px;
+  padding: 5px;
   background: rgba(22, 170, 202, 0.2);
-  padding: 20px;
-  border-radius: 50%;
-  margin-top: 31px;
-  margin-right: 25px;
+}
+.skill-item .item-img img {
+  width: 30px;
 }
 
-.text-title {
-  margin-top: 37px;
+.skill-item .text-title {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  padding-left: 20px;
+  justify-content: center;
+}
+.skill-item .text-title h4 {
+  margin: 0;
 }
 
-.text-title .title {
-  font-family: Nunito, sans-serif;
+.skill-item .text-title .title {
+  font-weight: bold;
+  font-family: nunito, sans-serif;
   font-size: 22px;
-  margin-bottom: 5px;
-  font-weight: 500;
 }
 
-.text-title .courses {
-  font-size: 15px;
-  font-family: Rubik, sans-serif;
-  color: #505050;
+.skill-item:hover {
+  background: #226fb7;
+  color: #fff;
+  border-color: #226fb7;
 }
 
-/* @media only screen and (max-width:1200px) {
-    .gutter-row {
-        max-width: 394px !important;
-        height: 132px !important;
-        background-color: black;
-        margin: 10px 20px 30px 10px;
-    }
-  } */
-@media only screen and (min-width: 1200px) {
-  .item-container {
-    padding-left: 140px !important;
-    min-width: 1200px !important;
-  }
-
-  .gutter-row {
-    max-width: 393 !important;
-    height: 132px !important;
-    margin: 30px 0px 14px 30px;
-    background-color: ffffff;
-  }
+.skill-item:hover > .item-img {
+  background-color: #fff;
+  color: white;
+  transition: all 1s ease;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .item-container {
-    padding-left: 40px !important;
-    max-width: 1199px !important;
-  }
-
-  .gutter-row {
-    max-width: 290px !important;
-    max-height: 290px !important;
-    margin: 10px 20px 30px 10px;
-  }
-
-  .text-title .title {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-
-  .text-title .courses {
-    font-size: 15px;
-    font-family: Rubik, sans-serif;
-    color: #505050;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .item-container {
-    margin-left: 147px !important;
-    margin-right: 147px !important;
-    min-width: 900px !important;
-  }
-
-  .gutter-row {
-    min-width: 330px !important;
-    height: 122px !important;
-    margin: 15px 15px 35px 15px !important;
-  }
-
-  .text-title .title {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-
-  .text-title .courses {
-    font-size: 15px;
-    font-family: Rubik, sans-serif;
-    color: #505050;
-  }
-}
-
-@media only screen and (min-width: 479px) and (max-width: 767px) {
-  .item-container {
-    padding: 0px 100px 0px 100px !important;
-    padding: auto;
-    width: 100%;
-    max-width: 767px !important;
-    min-width: 479px !important;
-  }
-
-  .gutter-row {
-    min-width: 510px !important;
-    height: 122px !important;
-    margin-bottom: 20px;
-  }
-
-  .text-title .title {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-
-  .text-title .courses {
-    font-size: 15px;
-    font-family: Rubik, sans-serif;
-    color: #505050;
-  }
-}
-
-@media only screen and (max-width: 487px) {
-  .item-container {
-    padding: 0px 100px 0px 100px !important;
-    padding: auto;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    max-width: 487px !important;
-    min-width: 487px !important;
-  }
-
-  .gutter-row {
-    min-width: 510px !important;
-    height: 122px !important;
-    margin-bottom: 20px;
-  }
-
-  .text-title .title {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-
-  .text-title .courses {
-    font-size: 15px;
-    font-family: Rubik, sans-serif;
-    color: #505050;
-  }
+.skill-item:hover .item-img img {
+  transition: all 2s ease;
+  transform: scale(0.9);
 }

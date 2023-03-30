@@ -77,5 +77,61 @@
       "image": "https://devplus.edu.vn/assets/images/devplus/Artboard_2.png",
       "titleFooterBottom": "Facebook"
     }
+  ],
+  "item": [
+    {
+      "id": 1,
+      "title": "Programing foundation",
+      "courses": "Algorithm, Design pattern",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/1.png"
+    },
+    {
+      "id": 2,
+      "title": "Database",
+      "courses": "Unit testing, TDD",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/2.png"
+    },
+    {
+      "id": 3,
+      "title": "Testing",
+      "courses": "typicode",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/3.png"
+    },
+    {
+      "id": 4,
+      "title": "Front-end",
+      "courses": "HTM/CSS/Js , ReactJS/VueJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/4.png"
+    },
+    {
+      "id": 5,
+      "title": "Back-end",
+      "courses": "PHP, NodeJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/5.png"
+    },
+    {
+      "id": 6,
+      "title": "Agile Stable Team",
+      "courses": "Agile/Scrum",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/6.png"
+    },
+    {
+      "id": 7,
+      "title": "English",
+      "courses": "Basic conversion",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/7.png"
+    },
+    {
+      "id": 8,
+      "title": "Communication",
+      "courses": "HORENSO",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/8.png"
+    },
+    {
+      "id": 9,
+      "title": "Career path",
+      "courses": "Work ethic, Integrity",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/9.png"
+    }
   ]
 }
