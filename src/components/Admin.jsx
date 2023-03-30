@@ -1,16 +1,12 @@
 import { Col, Row } from "antd";
-
 import "../assets/css/admin.css";
 
-const Adminision = () => {
+const Admin = ({ admin }) => {
   return (
     <Row className="mau">
       <Col span={24} lg={{ span: 12 }}>
         <div>
-          <img
-            className="anhadmin"
-            src="https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png"
-          />
+          <img className="anhadmin" src={admin?.image} />
         </div>
       </Col>
 
@@ -45,4 +41,4 @@ const Adminision = () => {
   );
 };
 
-export default Adminision;
+export default Admin;

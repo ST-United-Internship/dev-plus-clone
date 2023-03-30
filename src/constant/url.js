@@ -4,4 +4,5 @@ export const API_URL = {
   STORIES: "stories",
   FOOTER: "footer",
   ABOUTROAD: "aboutroad",
+  ADMIN: "admin",
 };

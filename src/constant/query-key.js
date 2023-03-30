@@ -4,4 +4,5 @@ export const QUERY_KEY = {
   STORIES: "STORIES",
   FOOTER: "FOOTER",
   ABOUTROAD: "ABOUTROAD",
+  ADMIN: "ADMIN",
 };
