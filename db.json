@@ -1,4 +1,33 @@
 {
+  "homebanner": {
+    "title": "Devplus Will Support The Early Stage Developers Go The Right Career Path",
+    "description": "Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing"
+  },
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+
+  "stories": [
+    {
+      "id": 1,
+      "username": "Thatsadaphone Inthapakdy",
+      "bio": "Dev plus help me to re-train about knowledge with technology, experience how to do the real project with senior developers by testing their current project, and share more experience with them. enjoy more events and workshops.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person3.png"
+    },
+    {
+      "id": 2,
+      "username": "Tien Thinh",
+      "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person1.png"
+    },
+    {
+      "id": 3,
+      "username": "Quynh Nga",
+      "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person2.png"
+    }
+  ],
+
   "footer": [
     {
       "id": 1,
@@ -17,8 +46,8 @@
       "title": "OUR CAMPUS",
       "values": [
         "One plus (+) Programing foundation",
-        "Alumni network",
-        "Connect with experts"
+        "Two plus (++) Skill up and onboard",
+        "Three plus (+++) Become a senior"
       ]
     },
 

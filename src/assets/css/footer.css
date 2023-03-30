@@ -2,10 +2,11 @@
   background-color: #273c66;
   background-image: url(../../assets/images/footer-bg.png);
   background-size: cover;
+  margin-top: 100px;
 }
 
 .footer-top {
-  padding: 218px 0 103px;
+  padding: 218px 0 93px;
 }
 
 .widget-title {
@@ -15,7 +16,6 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;
-  margin-right: 1rem;
 }
 
 .footer-top ul {
@@ -25,7 +25,6 @@
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  margin-right: 2rem;
 }
 
 .footer-top ul li a {
@@ -47,10 +46,6 @@
   padding-left: 15px;
   position: relative;
   margin-bottom: 11px;
-}
-
-.rs-footer .footer-top .site-map li:last-child {
-  margin-bottom: 10rem;
 }
 
 .rs-footer .footer-top .address-widget li {
@@ -153,30 +148,38 @@ span.anticon.anticon-facebook {
 
 @media only screen and (min-width: 1440px) {
   .footer-container {
-    max-width: 1270px;
+    max-width: 1400px;
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 991px) {
+  .footer-container {
+    max-width: 720px;
+  }
+
   .rs-footer .footer-top {
-    padding: 190px 81px 58px;
+    padding: 190px 76px 58px;
   }
 
   .rs-footer .footer-top .widget-title {
-    margin-bottom: 20px;
+    margin-bottom: -2rem;
   }
 
   h4.widget-title {
-    margin-top: -7rem;
+    margin-top: 0;
   }
 
   .footer-social ul {
     text-align: left;
   }
 
+  .footer-top ul {
+    margin: 3rem 0;
+  }
+
   .rs-footer .footer-bottom::before {
-    max-width: 831px;
+    max-width: 876px;
   }
 
   .rs-footer .footer-bottom {
