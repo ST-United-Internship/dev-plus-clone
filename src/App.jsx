@@ -1,9 +1,14 @@
 import Footer from "./components/Footer";
-// import Story from "./components/Story";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
+
 const App = () => {
   return (
     <div>
-      <Footer />
+      <QueryClientProvider client={queryClient}>
+        <Footer />
+      </QueryClientProvider>
     </div>
   );
 };

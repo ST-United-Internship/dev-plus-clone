@@ -65,6 +65,10 @@
   font-weight: 500;
 }
 
+.rs-footer .footer-top .site-map li a:hover {
+  color: #226fb7;
+}
+
 span.anticon.anticon-environment,
 span.anticon.anticon-phone,
 span.anticon.anticon-mail {
