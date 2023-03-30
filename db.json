@@ -26,5 +26,112 @@
       "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
       "image": "https://devplus.edu.vn/assets/images/devplus/person2.png"
     }
+  ],
+
+  "footer": [
+    {
+      "id": 1,
+      "title": "DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.",
+      "values": "Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing"
+    },
+
+    {
+      "id": 2,
+      "title": "FOR DEVPLUS",
+      "values": ["Training space", "Alumni network", "Connect with experts"]
+    },
+
+    {
+      "id": 3,
+      "title": "OUR CAMPUS",
+      "values": [
+        "One plus (+) Programing foundation",
+        "Two plus (++) Skill up and onboard",
+        "Three plus (+++) Become a senior"
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "ADDRESS",
+      "values": [
+        {
+          "icon": "EnvironmentOutlined",
+          "value": "116 - 118 Đường Mai Thúc Lân, Mỹ An, Ngũ Hành Sơn, Đà Nẵng"
+        },
+
+        {
+          "icon": "PhoneOutlined",
+          "value": "(+84) 368492885"
+        },
+
+        {
+          "icon": "MailOutlined",
+          "value": "Hello@devplus.edu.vn"
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "image": "https://devplus.edu.vn/assets/images/devplus/Artboard_2.png",
+      "titleFooterBottom": "Facebook"
+    }
+  ],
+  "item": [
+    {
+      "id": 1,
+      "title": "Programing foundation",
+      "courses": "Algorithm, Design pattern",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/1.png"
+    },
+    {
+      "id": 2,
+      "title": "Database",
+      "courses": "Unit testing, TDD",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/2.png"
+    },
+    {
+      "id": 3,
+      "title": "Testing",
+      "courses": "typicode",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/3.png"
+    },
+    {
+      "id": 4,
+      "title": "Front-end",
+      "courses": "HTM/CSS/Js , ReactJS/VueJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/4.png"
+    },
+    {
+      "id": 5,
+      "title": "Back-end",
+      "courses": "PHP, NodeJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/5.png"
+    },
+    {
+      "id": 6,
+      "title": "Agile Stable Team",
+      "courses": "Agile/Scrum",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/6.png"
+    },
+    {
+      "id": 7,
+      "title": "English",
+      "courses": "Basic conversion",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/7.png"
+    },
+    {
+      "id": 8,
+      "title": "Communication",
+      "courses": "HORENSO",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/8.png"
+    },
+    {
+      "id": 9,
+      "title": "Career path",
+      "courses": "Work ethic, Integrity",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/9.png"
+    }
   ]
 }

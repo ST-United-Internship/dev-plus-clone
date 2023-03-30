@@ -8,3 +8,7 @@ export const getHomeBannerAPI = () => {
 export const getStoriesAPI = () => {
   return axios.get(API_URL.STORIES);
 };
+
+export const getFooterAPI = () => {
+  return axios.get(API_URL.FOOTER);
+};
