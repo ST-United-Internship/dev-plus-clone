@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import Footer from "../components/Footer";
 import SkillGrid from "../components/SkillsGrid";
+import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
+import { AboutRoad } from "../components/AboutRoad";
 
 const Home = () => {
   useEffect(() => {
@@ -20,9 +22,12 @@ const Home = () => {
 
   const { data: footerData, isLoading: loadFooterData } = useGetFooter();
 
+  const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
+
   return (
     <>
       <HomeBanner homeBannerData={homeBannerData} />
+      {!loadAboutRoad && <AboutRoad aboutRoadData={aboutRoadData} />}
       <SkillGrid />
       <Story stories={stories} />
       {!loadFooterData && <Footer footerData={footerData} />}
