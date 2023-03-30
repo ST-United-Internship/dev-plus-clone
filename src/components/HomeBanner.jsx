@@ -1,13 +1,6 @@
 import "../assets/css/HomeBanner.css";
-import Aos from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 const HomeBanner = ({ homeBannerData }) => {
-  useEffect(() => {
-    Aos.init({ duration: 1500, easing: "ease", once: true });
-  }, []);
-
   return (
     <div className="header-container">
       <div className="backgroud-header">

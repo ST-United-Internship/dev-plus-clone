@@ -11,7 +11,7 @@ const StoryItem = ({ userStory }) => {
               width={66}
               src="https://devplus.edu.vn/assets/images/testimonial/style5/quote2.png"
             />
-            <p className="story-item-desc">{userStory.bio}</p>
+            <p className="story-item-desc">{userStory?.bio}</p>
 
             <div className="desc-img">
               <Image
@@ -25,7 +25,7 @@ const StoryItem = ({ userStory }) => {
         </div>
 
         <div className="user-info-container">
-          <p className="username">{userStory.username}</p>
+          <p className="username">{userStory?.username}</p>
           <p className="dev-plus-member">Member DevPlus+</p>
         </div>
       </div>

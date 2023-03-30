@@ -5,15 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/story.css";
 import StoryItem from "./StoryItem";
 import { settings } from "./StorySlideConfig";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useEffect } from "react";
 
 const Story = ({ stories }) => {
-  useEffect(() => {
-    AOS.init();
-  });
-
   return (
     <>
       <div
@@ -40,8 +33,8 @@ const Story = ({ stories }) => {
             offset={4}
           >
             <Slider {...settings}>
-              {stories?.map((e) => (
-                <StoryItem key={e.id} userStory={e} />
+              {stories?.map((story) => (
+                <StoryItem key={story.id} userStory={story} />
               ))}
             </Slider>
           </Col>
