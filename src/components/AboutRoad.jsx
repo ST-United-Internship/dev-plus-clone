@@ -6,15 +6,27 @@ export const AboutRoad = ({ aboutRoadData }) => {
   const { xs, sm, lg } = useBreakpoint();
   return (
     <Row justify="center" className="about-road">
-      <Col className="container" span={16}>
+      <Col
+        className="container"
+        xs={{ span: 23 }}
+        sm={{ span: 24 }}
+        md={{ span: 22 }}
+        lg={{ span: 16 }}
+        xl={{ span: 16 }}
+        xxl={{ span: 16 }}
+      >
         <Row style={{ flexWrap: "wrap-reverse" }}>
           <Col
             className="about-container"
-            span={24}
+            xs={{ span: 24 }}
+            sm={{ span: 24 }}
+            md={{ span: 12 }}
+            lg={{ span: 12 }}
+            xl={{ span: 12 }}
+            xxl={{ span: 12 }}
             style={{
               padding: xs ? "40px 30px 50px" : "60px 60px 70px",
             }}
-            lg={{ span: 14 }}
           >
             <h3 data-aos="fade-up" data-aos-delay="300">
               ABOUT DEVPLUS
