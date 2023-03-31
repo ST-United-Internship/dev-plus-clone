@@ -11,6 +11,8 @@ import SkillGrid from "../components/SkillsGrid";
 import { Loading } from "../components/Loading";
 import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
 import { AboutRoad } from "../components/AboutRoad";
+import { useGetCampus } from "../hooks/useCampus";
+import { Campus } from "../components/Campus";
 
 const Home = () => {
   useEffect(() => {
@@ -19,13 +21,21 @@ const Home = () => {
 
   const { data: homeBannerData, isLoading: loadBanner } = useGetBanner();
 
+  const { data: campusData, isLoading: loadCampusData } = useGetCampus();
+
   const { data: stories, isLoading: loadStories } = useGetStories();
 
   const { data: footerData, isLoading: loadFooterData } = useGetFooter();
 
   const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
 
-  if (loadStories || loadBanner || loadFooterData || loadAboutRoad)
+  if (
+    loadStories ||
+    loadBanner ||
+    loadFooterData ||
+    loadAboutRoad ||
+    loadCampusData
+  )
     return <Loading />;
 
   return (
@@ -33,6 +43,7 @@ const Home = () => {
       <HomeBanner homeBannerData={homeBannerData} />
       <AboutRoad aboutRoadData={aboutRoadData} />
       <SkillGrid />
+      <Campus campusData={campusData} />
       <Story stories={stories} />
       <Footer footerData={footerData} />
     </>
