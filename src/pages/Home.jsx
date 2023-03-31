@@ -1,9 +1,12 @@
 import HomeBanner from "../components/HomeBanner";
 import Story from "../components/Story/Story";
+import Admin from "../components/Admin";
 import { useGetBanner } from "../hooks/useBanner";
 import { useGetStories } from "../hooks/useGetStroies";
 import { useGetFooter } from "../hooks/useFooter";
+import { useGetAdmin } from "../hooks/useAdmin";
 import { useEffect } from "react";
+
 import "aos/dist/aos.css";
 import Aos from "aos";
 import Footer from "../components/Footer";
@@ -13,6 +16,7 @@ import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
 import { AboutRoad } from "../components/AboutRoad";
 import { useGetCampus } from "../hooks/useCampus";
 import { Campus } from "../components/Campus";
+import { useGetSkills } from "../hooks/useGetSkills";
 
 const Home = () => {
   useEffect(() => {
@@ -27,6 +31,10 @@ const Home = () => {
 
   const { data: footerData, isLoading: loadFooterData } = useGetFooter();
 
+  const { data: admin, isLoading: loadAdmin } = useGetAdmin();
+
+  const { data: skills, isLoading: loadSkills } = useGetSkills();
+
   const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
 
   if (
@@ -34,7 +42,9 @@ const Home = () => {
     loadBanner ||
     loadFooterData ||
     loadAboutRoad ||
-    loadCampusData
+    loadCampusData ||
+    loadAdmin ||
+    loadSkills
   )
     return <Loading />;
 
@@ -42,8 +52,9 @@ const Home = () => {
     <>
       <HomeBanner homeBannerData={homeBannerData} />
       <AboutRoad aboutRoadData={aboutRoadData} />
-      <SkillGrid />
+      <SkillGrid skills={skills} />
       <Campus campusData={campusData} />
+      <Admin admin={admin} />
       <Story stories={stories} />
       <Footer footerData={footerData} />
     </>

@@ -11,16 +11,27 @@ export const Campus = ({ campusData }) => {
           "url(	https://devplus.edu.vn/assets/images/bg/home-8-bg.jpg)",
       }}
     >
-      <Col span={16} className="campus-container">
+      <Col
+        xs={{ span: 23 }}
+        sm={{ span: 24 }}
+        md={{ span: 22 }}
+        lg={{ span: 16 }}
+        xl={{ span: 16 }}
+        xxl={{ span: 16 }}
+        className="campus-container"
+      >
         <h2>Our main campus</h2>
-        <Row justify="space-between">
+        <Row justify="space-between" gutter={[16, 16]}>
           {campusData.map((data, index) => (
             <Col
-              span={24}
               data-aos="fade-up"
               data-aos-delay={`${(index + 3) * 100}`}
-              md={{ span: 11 }}
-              lg={{ span: 7 }}
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
+              md={{ span: 12 }}
+              lg={{ span: 12 }}
+              xl={{ span: 12 }}
+              xxl={{ span: 12 }}
               key={index}
             >
               <div className="course-item">

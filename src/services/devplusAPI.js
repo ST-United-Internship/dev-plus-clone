@@ -20,3 +20,11 @@ export const getFooterAPI = () => {
 export const getAboutRoadAPI = () => {
   return axios.get(API_URL.ABOUTROAD);
 };
+
+export const getAdminAPI = () => {
+  return axios.get(API_URL.ADMIN);
+};
+
+export const getSkillsAPI = () => {
+  return axios.get(API_URL.SKILLS);
+};
