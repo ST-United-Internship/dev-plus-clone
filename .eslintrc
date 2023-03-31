@@ -9,14 +9,15 @@
       "experimentalObjectRestSpread": true,
       "jsx": true
     },
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
     "react/jsx-uses-vars": "error"
+    
   }
 }

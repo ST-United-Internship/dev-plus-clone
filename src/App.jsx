@@ -1,8 +1,8 @@
-import Story from "./components/Story";
+import FAQ from "./components/FAQ";
 const App = () => {
   return (
     <div>
-      <Story />
+      <FAQ />
     </div>
   );
 };

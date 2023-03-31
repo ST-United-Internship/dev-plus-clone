@@ -1,0 +1,390 @@
+.pt-100 {
+  padding-bottom: 100px;
+  padding-top: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.main-container {
+  padding: 112px;
+}
+
+.header {
+  display: flex;
+  margin-left: 25px;
+}
+.header-part {
+  width: 635px;
+  padding: 0;
+}
+.main-part {
+  background: #f9f8f8;
+}
+
+.title-header {
+  margin-bottom: 40px;
+}
+
+.text-part {
+  font-size: 36px;
+  color: #111111;
+  line-height: 46px;
+  font-weight: 700;
+}
+
+.accordion {
+  border-width: 12px;
+}
+
+.accordion-item {
+  margin-bottom: 25px;
+  border: none;
+  background-color: #fff;
+}
+
+/* .accordion-text{
+    
+} */
+
+.accordion-body {
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #505050;
+  padding: 15px 14px 15px !important;
+  width: 100%;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  border: none;
+}
+
+.accordion-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 60px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #226fb7;
+  box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+}
+
+.img-part {
+  background: url("https://devplus.edu.vn/assets/images/devplus/video_03.png");
+  background-size: cover;
+  background-position: center;
+  width: 635px;
+  height: 615px;
+  min-height: 615px;
+}
+
+.img-part .button-play i {
+  margin-left: 5px;
+}
+.img-part .button-play i:before {
+  font-size: 30px;
+  line-height: 70px;
+}
+.img-part .button-play:hover:before {
+  background: #226fb7;
+}
+.icon-img {
+  position: relative;
+  /* display: inline-block; */
+  z-index: 1;
+}
+
+.icon-img .button-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  background: #226fb7;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  text-align: center;
+}
+.icon-img .button-play:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+/* .button-play > i{
+    font-size: 30px;
+    padding-top: 17px;
+    padding-left: 5px;
+
+} */
+
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background: #f9f8f8;
+}
+
+.App .title {
+  padding-left: 20px;
+  font-size: 36px;
+  color: #111111;
+  line-height: 46px;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.faqs {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+}
+
+.faqs .faq {
+  /* margin: 15px;
+	padding: 15px; */
+  background: #fff;
+  /* color: #fff; */
+  /* width: 415px;
+    height: 90px; */
+  box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  width: 515px;
+  transition: background-color 2s linear;
+}
+.faq {
+  transition: background-color 2s linear;
+}
+
+.faqs .faq .faq-question {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  padding-left: 20px;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  gap: 12px;
+}
+
+.faqs .faq .faq-question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-question::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+  background: #fff;
+  color: #111111;
+}
+
+@media only screen and (max-width: 1700px) {
+  .main-container {
+    padding: 85px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .main-container {
+    padding: 65px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .main-container {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .main-container {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .main-container {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .main-container {
+    padding: 5px;
+  }
+
+  .pt-100 {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1357px) {
+  .pt-100 {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1212px) {
+  .main-container {
+    padding: 0px;
+  }
+
+  .pt-100 {
+    padding-left: 0px;
+  }
+
+  .header {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    display: block;
+  }
+
+  .pt-100 {
+    padding-right: 0px;
+  }
+  .faqs {
+    padding-left: 130px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    width: 635px;
+  }
+  .img-part {
+    min-height: 400px !important;
+    height: auto;
+    width: 900px;
+  }
+  .App {
+    width: 900px;
+  }
+  /* .faqs .faq{
+           width: 350px;
+       } */
+}
+
+@media only screen and (max-width: 480px) {
+  .App {
+    width: 635px;
+  }
+  .img-part {
+    min-height: 400px !important;
+    height: auto;
+    width: 477px;
+  }
+  .App {
+    width: 477px;
+  }
+  .faqs .faq {
+    width: 350px;
+  }
+  .header-part {
+    width: 0px;
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  .img-part {
+    min-height: 400px !important;
+    height: auto;
+    width: 430px;
+  }
+  .App {
+    width: 430px;
+  }
+  .faqs .faq {
+    width: 350px;
+  }
+  .header-part {
+    width: 0px;
+  }
+  .faqs {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 281px) {
+  .img-part {
+    min-height: 400px !important;
+    height: auto;
+    width: 279px;
+  }
+  .App {
+    width: 279px;
+  }
+  .App .title {
+    font-size: 20px;
+  }
+  .faqs .faq .faq-question {
+    font-size: 14px;
+  }
+  .faqs .faq .faq-answer {
+    font-size: 14px;
+  }
+  .faqs {
+    padding-left: 30px;
+  }
+  .faqs .faq {
+    width: 209px;
+  }
+  .header-part {
+    width: 0px;
+  }
+}
