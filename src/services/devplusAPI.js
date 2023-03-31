@@ -12,3 +12,7 @@ export const getStoriesAPI = () => {
 export const getFooterAPI = () => {
   return axios.get(API_URL.FOOTER);
 };
+
+export const getAboutRoadAPI = () => {
+  return axios.get(API_URL.ABOUTROAD);
+};
