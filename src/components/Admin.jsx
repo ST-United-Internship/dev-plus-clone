@@ -11,24 +11,19 @@ const Admin = ({ admin }) => {
       </Col>
 
       <Col span={24} lg={{ span: 12 }}>
-        <div class="dstext">
-          <div class="content">
-            <div class="chu">
+        <div className="dstext">
+          <div className="content">
+            <div className="chu">
               <h2>Admission for 2021</h2>
-              <p class="line-one">
-                <>
-                  <div>{admin?.Disclaimer}</div>
-                </>
+              <p className="line-one">
+                <span>{admin?.Disclaimer}</span>
               </p>
-              <p class="line-two">
-                <>
-                  <div>{admin?.title}</div>
-                </>
+              <p className="line-two">
+                <span>{admin?.title}</span>
               </p>
             </div>
-
-            <div class="Apply">
-              <a class="nutbam" href="#">
+            <div className="Apply">
+              <a className="nutbam" href="#">
                 Apply Now
               </a>
             </div>

@@ -1,14 +1,17 @@
 import HomeBanner from "../components/HomeBanner";
 import Story from "../components/Story/Story";
 import Admin from "../components/Admin";
+import Footer from "../components/Footer";
+import SkillGrid from "../components/SkillsGrid";
 import { useGetBanner } from "../hooks/useBanner";
 import { useGetStories } from "../hooks/useGetStroies";
 import { useGetFooter } from "../hooks/useFooter";
 import { useGetAdmin } from "../hooks/useAdmin";
 import { useEffect } from "react";
-
+import { useGetSkills } from "../hooks/useGetSkills";
 import "aos/dist/aos.css";
 import Aos from "aos";
+<<<<<<< HEAD
 import Footer from "../components/Footer";
 import SkillGrid from "../components/SkillsGrid";
 import { Loading } from "../components/Loading";
@@ -16,6 +19,8 @@ import { useGetAboutRoad } from "../hooks/useGetAboutRoad";
 import { AboutRoad } from "../components/AboutRoad";
 import { useGetCampus } from "../hooks/useCampus";
 import { Campus } from "../components/Campus";
+=======
+>>>>>>> 27c598d (fix: fix style skill grid ui and admin ui)
 
 const Home = () => {
   useEffect(() => {
@@ -51,10 +56,13 @@ const Home = () => {
 >>>>>>> 7ab2047 (feat: admin ui)
 
   const { data: stories } = useGetStories();
+  const { data: skills } = useGetSkills();
+  console.log(skills);
 
   return (
     <>
       <HomeBanner homeBannerData={homeBannerData} />
+<<<<<<< HEAD
       <AboutRoad aboutRoadData={aboutRoadData} />
       <SkillGrid />
 <<<<<<< HEAD
@@ -63,6 +71,9 @@ const Home = () => {
       <Story stories={stories} />
       <Footer footerData={footerData} />
 =======
+=======
+      <SkillGrid skills={skills} />
+>>>>>>> 27c598d (fix: fix style skill grid ui and admin ui)
       <Admin admin={admin} />
       <Story stories={stories} />
       {!loadFooterData && <Footer footerData={footerData} />}

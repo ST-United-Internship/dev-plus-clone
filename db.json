@@ -79,8 +79,12 @@
       "titleFooterBottom": "Facebook"
     }
   ],
+<<<<<<< HEAD
 
   "item": [
+=======
+  "skills": [
+>>>>>>> 27c598d (fix: fix style skill grid ui and admin ui)
     {
       "id": 1,
       "title": "Programing foundation",

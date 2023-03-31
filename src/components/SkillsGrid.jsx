@@ -1,19 +1,9 @@
 import { Col, Row } from "antd";
 
-import axios from "axios";
-import { useEffect, useState } from "react";
 import Container from "./container/Container";
 import "../assets/css/skillsgrid.css";
 
-function BasicExample() {
-  const [itemData, setItemData] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:3000/item").then((response) => {
-      const data = response.data;
-      setItemData(data);
-    });
-  }, []);
-
+const Skills = ({ skills }) => {
   return (
     <>
       <div style={{ backgroundColor: "#f3f8f9" }}>
@@ -28,9 +18,9 @@ function BasicExample() {
               <h1>What an engineer after Devplus will must have?</h1>
             </Col>
 
-            {itemData?.map((skill) => (
+            {skills?.map((skill) => (
               <Col
-                key={skill.id}
+                key={skill?.id}
                 xs={{ span: 22 }}
                 sm={{ span: 22 }}
                 md={{ span: 12 }}
@@ -40,12 +30,12 @@ function BasicExample() {
               >
                 <div className="skill-item">
                   <div className="item-img">
-                    <img src={skill.image} />
+                    <img src={skill?.image} />
                   </div>
 
                   <div className="text-title">
-                    <h4 className="title">Programing foundation</h4>
-                    <span className="courses">Algorithm, Design pattern</span>
+                    <h4 className="title">{skill?.title}</h4>
+                    <span className="courses">{skill?.courses}</span>
                   </div>
                 </div>
               </Col>
@@ -55,5 +45,6 @@ function BasicExample() {
       </div>
     </>
   );
-}
-export default BasicExample;
+};
+
+export default Skills;

@@ -17,10 +17,17 @@ export const getFooterAPI = () => {
   return axios.get(API_URL.FOOTER);
 };
 
+<<<<<<< HEAD
 export const getAboutRoadAPI = () => {
   return axios.get(API_URL.ABOUTROAD);
 };
 
+=======
+>>>>>>> 27c598d (fix: fix style skill grid ui and admin ui)
 export const getAdminAPI = () => {
   return axios.get(API_URL.ADMIN);
+};
+
+export const getSkillsAPI = () => {
+  return axios.get(API_URL.SKILLS);
 };
