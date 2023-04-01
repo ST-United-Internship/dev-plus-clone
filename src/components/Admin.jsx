@@ -14,9 +14,9 @@ const Admin = ({ admin }) => {
         <div className="dstext">
           <div className="content">
             <div className="chu">
-              <h2>Admission for 2021</h2>
+              <h2>{admin?.course}</h2>
               <p className="line-one">
-                <span>{admin?.Disclaimer}</span>
+                <span>{admin?.disclaimer}</span>
               </p>
               <p className="line-two">
                 <span>{admin?.title}</span>

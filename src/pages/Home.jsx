@@ -1,6 +1,7 @@
 import HomeBanner from "../components/HomeBanner";
 import Story from "../components/Story/Story";
 import Admin from "../components/Admin";
+import Faq from "../components/Faq";
 import { useGetBanner } from "../hooks/useBanner";
 import { useGetStories } from "../hooks/useGetStroies";
 import { useGetFooter } from "../hooks/useFooter";
@@ -17,6 +18,7 @@ import { AboutRoad } from "../components/AboutRoad";
 import { useGetCampus } from "../hooks/useCampus";
 import { Campus } from "../components/Campus";
 import { useGetSkills } from "../hooks/useGetSkills";
+import { useGetConserns } from "../hooks/useGetConcerns";
 
 const Home = () => {
   useEffect(() => {
@@ -37,6 +39,8 @@ const Home = () => {
 
   const { data: aboutRoadData, isLoading: loadAboutRoad } = useGetAboutRoad();
 
+  const { data: concerns, isLoading: loadConcerns } = useGetConserns();
+
   if (
     loadStories ||
     loadBanner ||
@@ -44,7 +48,8 @@ const Home = () => {
     loadAboutRoad ||
     loadCampusData ||
     loadAdmin ||
-    loadSkills
+    loadSkills ||
+    loadConcerns
   )
     return <Loading />;
 
@@ -55,6 +60,7 @@ const Home = () => {
       <SkillGrid skills={skills} />
       <Campus campusData={campusData} />
       <Admin admin={admin} />
+      <Faq concerns={concerns} />
       <Story stories={stories} />
       <Footer footerData={footerData} />
     </>

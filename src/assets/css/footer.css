@@ -190,3 +190,75 @@ span.anticon.anticon-facebook {
     margin-left: -9px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .rs-footer .footer-bottom {
+    margin-left: 0;
+  }
+
+  ul.footer-social {
+    margin-left: 0;
+  }
+  .desc {
+    font-size: 10px;
+  }
+  .widget-title {
+    font-size: 10px;
+  }
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .rs-footer .footer-bottom {
+    margin-left: 0;
+  }
+
+  ul.footer-social {
+    margin-left: 0;
+  }
+  .desc {
+    font-size: 10px;
+  }
+  .widget-title {
+    font-size: 10px;
+  }
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .rs-footer .footer-bottom {
+    margin-left: 0;
+  }
+
+  ul.footer-social {
+    margin-left: 0;
+  }
+  .footer-container {
+    font-size: 8px !important;
+  }
+
+  .site-map {
+    font-size: 8px !important;
+  }
+  .address-widget {
+    font-size: 8px !important;
+  }
+}
