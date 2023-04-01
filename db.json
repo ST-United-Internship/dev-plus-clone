@@ -1,0 +1,198 @@
+{
+  "homebanner": {
+    "title": "Devplus Will Support The Early Stage Developers Go The Right Career Path",
+    "description": "Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing"
+  },
+
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+
+  "stories": [
+    {
+      "id": 1,
+      "username": "Thatsadaphone Inthapakdy",
+      "bio": "Dev plus help me to re-train about knowledge with technology, experience how to do the real project with senior developers by testing their current project, and share more experience with them. enjoy more events and workshops.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person3.png"
+    },
+    {
+      "id": 2,
+      "username": "Tien Thinh",
+      "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person1.png"
+    },
+    {
+      "id": 3,
+      "username": "Quynh Nga",
+      "bio": "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
+      "image": "https://devplus.edu.vn/assets/images/devplus/person2.png"
+    }
+  ],
+
+  "footer": [
+    {
+      "id": 1,
+      "title": "DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.",
+      "values": "Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing"
+    },
+
+    {
+      "id": 2,
+      "title": "FOR DEVPLUS",
+      "values": ["Training space", "Alumni network", "Connect with experts"]
+    },
+
+    {
+      "id": 3,
+      "title": "OUR CAMPUS",
+      "values": [
+        "One plus (+) Programing foundation",
+        "Two plus (++) Skill up and onboard",
+        "Three plus (+++) Become a senior"
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "ADDRESS",
+      "values": [
+        {
+          "icon": "EnvironmentOutlined",
+          "value": "116 - 118 Đường Mai Thúc Lân, Mỹ An, Ngũ Hành Sơn, Đà Nẵng"
+        },
+
+        {
+          "icon": "PhoneOutlined",
+          "value": "(+84) 368492885"
+        },
+
+        {
+          "icon": "MailOutlined",
+          "value": "Hello@devplus.edu.vn"
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "image": "https://devplus.edu.vn/assets/images/devplus/Artboard_2.png",
+      "titleFooterBottom": "Facebook"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "title": "Programing foundation",
+      "courses": "Algorithm, Design pattern",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/1.png"
+    },
+    {
+      "id": 2,
+      "title": "Database",
+      "courses": "Unit testing, TDD",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/2.png"
+    },
+    {
+      "id": 3,
+      "title": "Testing",
+      "courses": "typicode",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/3.png"
+    },
+    {
+      "id": 4,
+      "title": "Front-end",
+      "courses": "HTM/CSS/Js , ReactJS/VueJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/4.png"
+    },
+    {
+      "id": 5,
+      "title": "Back-end",
+      "courses": "PHP, NodeJS",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/5.png"
+    },
+    {
+      "id": 6,
+      "title": "Agile Stable Team",
+      "courses": "Agile/Scrum",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/6.png"
+    },
+    {
+      "id": 7,
+      "title": "English",
+      "courses": "Basic conversion",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/7.png"
+    },
+    {
+      "id": 8,
+      "title": "Communication",
+      "courses": "HORENSO",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/8.png"
+    },
+    {
+      "id": 9,
+      "title": "Career path",
+      "courses": "Work ethic, Integrity",
+      "image": "https://devplus.edu.vn/assets/images/categories/icons/9.png"
+    }
+  ],
+
+  "aboutroad": {
+    "id": 0,
+    "title": "The Fact: Skilled labour shortage for software companies but full of freshers and low level juniors",
+    "desc": "Our responsibility is filling the gap between the quality of graduate students and the quality of engineers. Devplus will help reducing the cost of re-training and accelerating the skill-up progress of students and freshers.",
+    "road": [
+      { "id": 1, "title": "Apply Devplus" },
+      { "id": 2, "title": "Testing and Interview" },
+      { "id": 3, "title": "1st plus (+) campus" },
+      { "id": 4, "title": "2nd plus (++) campus" },
+      { "id": 5, "title": "Onboard & start your career" }
+    ]
+  },
+
+  "campus": [
+    {
+      "id": "1",
+      "title": "One plus (+) Programing foundation",
+      "img": "https://devplus.edu.vn/assets/images/devplus/One_plus.png"
+    },
+    {
+      "id": "2",
+      "title": "Two plus (++) Skill up to to get ready",
+      "img": "https://devplus.edu.vn/assets/images/devplus/Two_plus.png"
+    },
+    {
+      "id": "3",
+      "title": "Three plus (+++) How to become a senior",
+      "img": "https://devplus.edu.vn/assets/images/devplus/Three_plus.png"
+    }
+  ],
+
+  "admin": {
+    "course": "Admission for 2021",
+    "image": "https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png",
+    "disclaimer": "Disclaimer: This position is expected to start around Feb 2022 and continue through the entire Summer term. We ask for a minimum of 12 weeks, full-time, for most internships. Please consider before submitting an application.",
+    "title": "Devplus aims to provide students the chance to work with our clients and awesome mentors to level up your programming skillset in the RIGHT path. With your education and experience, you will be able to take on real-world challenges from day one."
+  },
+  "concerns": [
+    {
+      "id": 1,
+      "question": "Do I need be fulltime during the campus?",
+      "answer": "Yes, it's mandatory. Fulltime as well as full commitment in order to obtain the best achievement."
+    },
+    {
+      "id": 2,
+      "question": "Does Devplus offer free courses?",
+      "answer": "Yes, it's kind of a scholarship. But, you need to pass our challenge through test and interview round."
+    },
+    {
+      "id": 3,
+      "question": "Which course will be suitable with me?",
+      "answer": "The first plus (+) course is designed to students who would like to join the OJT (on-job-train) programme. Next level, the second plus (++) course will suitable for one who got the first plus or fresher, who would like to be trained in order to ready to onboard the real projects. The third plus (+++) course is intended to the alumni of the second plus degree or junior who would like to reach a specific tech-stack: AI, Blockchain, Devops..."
+    },
+    {
+      "id": 4,
+      "question": "Does Devplus guarantee a job after graduating?",
+      "answer": "Yes, it's could be a good job. Once you get the second plus (++) you will ready to onboard the projects of our partners, the most highly recommended places to work."
+    }
+  ]
+}
