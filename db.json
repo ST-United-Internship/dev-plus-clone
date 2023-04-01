@@ -168,10 +168,31 @@
   ],
 
   "admin": {
-    "title": "anhadmin",
-    "courses": "admin",
+    "course": "Admission for 2021",
     "image": "https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png",
-    "Disclaimer": "Disclaimer: This position is expected to start around Feb 2022 and continue through the entire Summer term. We ask for a minimum of 12 weeks, full-time, for most internships. Please consider before submitting an application.",
+    "disclaimer": "Disclaimer: This position is expected to start around Feb 2022 and continue through the entire Summer term. We ask for a minimum of 12 weeks, full-time, for most internships. Please consider before submitting an application.",
     "title": "Devplus aims to provide students the chance to work with our clients and awesome mentors to level up your programming skillset in the RIGHT path. With your education and experience, you will be able to take on real-world challenges from day one."
-  }
+  },
+  "concerns": [
+    {
+      "id": 1,
+      "question": "Do I need be fulltime during the campus?",
+      "answer": "Yes, it's mandatory. Fulltime as well as full commitment in order to obtain the best achievement."
+    },
+    {
+      "id": 2,
+      "question": "Does Devplus offer free courses?",
+      "answer": "Yes, it's kind of a scholarship. But, you need to pass our challenge through test and interview round."
+    },
+    {
+      "id": 3,
+      "question": "Which course will be suitable with me?",
+      "answer": "The first plus (+) course is designed to students who would like to join the OJT (on-job-train) programme. Next level, the second plus (++) course will suitable for one who got the first plus or fresher, who would like to be trained in order to ready to onboard the real projects. The third plus (+++) course is intended to the alumni of the second plus degree or junior who would like to reach a specific tech-stack: AI, Blockchain, Devops..."
+    },
+    {
+      "id": 4,
+      "question": "Does Devplus guarantee a job after graduating?",
+      "answer": "Yes, it's could be a good job. Once you get the second plus (++) you will ready to onboard the projects of our partners, the most highly recommended places to work."
+    }
+  ]
 }

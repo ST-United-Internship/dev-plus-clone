@@ -28,3 +28,7 @@ export const getAdminAPI = () => {
 export const getSkillsAPI = () => {
   return axios.get(API_URL.SKILLS);
 };
+
+export const getConserns = () => {
+  return axios.get(API_URL.CONCERNS);
+};

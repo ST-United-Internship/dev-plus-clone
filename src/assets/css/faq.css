@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.faq-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.concerns-container {
+  background-color: #f9f8f8;
+  padding: 60px 50px 70px;
+  height: auto;
+}
+
+.concern-title {
+  font-family: "Nunito";
+  font-size: 30px;
+}
+.faq-img-container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.faq-img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.faq-img-container .btn-play-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.faq-container .btn-icon-play {
+  font-size: 50px;
+  color: white;
+  padding: 15px;
+}
+
+.blob {
+  background: black;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+}
+.blob.blue {
+  background: #226fb7;
+  box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+  animation: pulse-blue 2s infinite;
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+  }
+}
+
+@keyframes pulse-blue-hover {
+  0% {
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+  }
+
+  70% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+  }
+}
+
+.btn-play-container:hover > .blob,
+.blue {
+  animation: pulse-blue-hover 2s infinite;
+}
+
+.show-video {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hide-video {
+  display: none;
+}
+
+.show-video .btn-close {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+.show-video div > div {
+  text-align: right;
+  cursor: pointer;
+}
+
+.custom-panel {
+  background-color: #fff;
+  font-weight: 600;
+  font-family: "Rubik";
+  border-radius: 2.75px 2.75px 0px 0px;
+  font-size: 16px;
+}
+.custom-panel .panel-desc {
+  font-size: 14px;
+  font-family: "Rubik";
+  color: #505050;
+  font-weight: 400;
+}
+.custom-panel .anticon.anticon-bell {
+  font-size: 16px !important;
+}
+.ant-collapse-header {
+  padding: 20px 12px !important;
+}
+/* .ant-collapse-header:focus {
+  background-color: #226fb7;
+  color: #fff;
+} */

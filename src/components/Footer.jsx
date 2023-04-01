@@ -7,56 +7,66 @@ const Footer = ({ footerData }) => {
   return (
     <footer className="rs-footer">
       <div className="footer-top">
-        <Container>
-          <div className="footer-container">
-            <Row justify="space-between">
-              <Col span={24} lg={{ span: 5 }}>
-                <h4 className="widget-title">{footerData[0]?.title}</h4>
-                <ul className="site-map">
-                  <li>{footerData[0]?.values}</li>
-                </ul>
-              </Col>
-              <Col span={24} lg={{ span: 5 }}>
-                <h4 className="widget-title">{footerData[1]?.title}</h4>
-                <ul className="site-map">
-                  {footerData[1]?.values.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a href="#">{item}</a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </Col>
-              <Col span={24} lg={{ span: 5 }}>
-                <h4 className="widget-title">{footerData[2]?.title}</h4>
-                <ul className="site-map">
-                  {footerData[2]?.values.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a href="#">{item}</a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </Col>
-              <Col span={24} lg={{ span: 5 }}>
-                <h4 className="widget-title">{footerData[3]?.title}</h4>
-                <ul className="address-widget">
-                  {footerData[3]?.values.map((item, index) => {
-                    const Icon = AntIcon[item?.icon];
-                    return (
-                      <li key={index}>
-                        <Icon />
-                        <div className="desc">{item?.value}</div>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </Col>
-            </Row>
-          </div>
-        </Container>
+        <Row justify="center">
+          <Col
+            className="faq-container"
+            xs={{ span: 24 }}
+            sm={{ span: 24 }}
+            md={{ span: 22 }}
+            lg={{ span: 20 }}
+            xl={{ span: 18 }}
+            xxl={{ span: 16 }}
+          >
+            <div className="footer-container">
+              <Row justify="space-between">
+                <Col span={24} lg={{ span: 5 }}>
+                  <h4 className="widget-title">{footerData[0]?.title}</h4>
+                  <ul className="site-map">
+                    <li>{footerData[0]?.values}</li>
+                  </ul>
+                </Col>
+                <Col span={24} lg={{ span: 5 }}>
+                  <h4 className="widget-title">{footerData[1]?.title}</h4>
+                  <ul className="site-map">
+                    {footerData[1]?.values.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <a href="#">{item}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Col>
+                <Col span={24} lg={{ span: 5 }}>
+                  <h4 className="widget-title">{footerData[2]?.title}</h4>
+                  <ul className="site-map">
+                    {footerData[2]?.values.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <a href="#">{item}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Col>
+                <Col span={24} lg={{ span: 5 }}>
+                  <h4 className="widget-title">{footerData[3]?.title}</h4>
+                  <ul className="address-widget">
+                    {footerData[3]?.values.map((item, index) => {
+                      const Icon = AntIcon[item?.icon];
+                      return (
+                        <li key={index}>
+                          <Icon />
+                          <div className="desc">{item?.value}</div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
       </div>
       <div className="footer-bottom">
         <Container>

@@ -6,4 +6,5 @@ export const QUERY_KEY = {
   ABOUTROAD: "ABOUTROAD",
   ADMIN: "ADMIN",
   SKILLS: "SKILLS",
+  CONCERNS: "CONCERNS",
 };
