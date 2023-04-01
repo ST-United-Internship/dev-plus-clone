@@ -15,7 +15,22 @@ const Faq = ({ concerns }) => {
     border: "none",
     borderRadius: "none",
   };
+
   const [isDisplayVideo, setIsDisplayVideo] = useState(false);
+
+  const stopVideo = () => {
+    var iframe = document.querySelector("iframe");
+    var video = document.querySelector("video");
+
+    if (iframe !== null) {
+      var iframeSrc = iframe.src;
+      iframe.src = iframeSrc;
+    }
+
+    if (video !== null) {
+      video.pause();
+    }
+  };
 
   const changeColorActive = (key) => {
     const antCollapseHeaders = document.querySelectorAll(
@@ -23,28 +38,28 @@ const Faq = ({ concerns }) => {
     );
     const bellIcons = document.querySelectorAll(".anticon.anticon-bell");
 
-    if (key[0] === undefined) {
-      // Reset state to defaut
-      for (const antCollapseHeader of antCollapseHeaders) {
-        antCollapseHeader.style.backgroundColor = "#fff";
-        antCollapseHeader.style.color = "#000";
-      }
-
-      for (const bellIcon of bellIcons) {
-        bellIcon.style.color = "#000";
-      }
-
-      return;
+    // reset state of all item to default
+    for (const antCollapseHeader of antCollapseHeaders) {
+      antCollapseHeader.style.backgroundColor = "#fff";
+      antCollapseHeader.style.color = "#000";
+    }
+    for (const bellIcon of bellIcons) {
+      bellIcon.style.color = "#000";
     }
 
-    // Change new sate
-    const antCollapseHeaderIndex = key[0] - 1;
-    antCollapseHeaders[antCollapseHeaderIndex].style.backgroundColor =
-      "#226fb7";
-    antCollapseHeaders[antCollapseHeaderIndex].style.color = "#fff";
+    if (key[0] === undefined || key[0] === 0) return;
 
-    const bellIconIndex = key[0] - 1;
-    bellIcons[bellIconIndex].style.color = "red";
+    // update new state for spectified item
+    const antCollapseHeaderIndex = key[0] - 1;
+
+    for (let index = 0; index < antCollapseHeaders.length; index++) {
+      if (index === antCollapseHeaderIndex) {
+        antCollapseHeaders[antCollapseHeaderIndex].style.backgroundColor =
+          "#226fb7";
+        antCollapseHeaders[antCollapseHeaderIndex].style.color = "#fff";
+        bellIcons[antCollapseHeaderIndex].style.color = "red"; // change bell icon color
+      }
+    }
   };
 
   return (
@@ -129,6 +144,7 @@ const Faq = ({ concerns }) => {
               className="btn-close"
               onClick={() => {
                 setIsDisplayVideo(false);
+                stopVideo();
               }}
             />
           </div>
