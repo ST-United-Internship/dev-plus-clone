@@ -7,4 +7,5 @@ export const QUERY_KEY = {
   ADMIN: "ADMIN",
   SKILLS: "SKILLS",
   CONCERNS: "CONCERNS",
+  GALLERIES: "GALLERIES",
 };
