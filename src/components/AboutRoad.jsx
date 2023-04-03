@@ -7,7 +7,6 @@ export const AboutRoad = ({ aboutRoadData }) => {
   return (
     <Row justify="center" className="about-road">
       <Col
-        className="container"
         xs={{ span: 23 }}
         sm={{ span: 24 }}
         md={{ span: 22 }}
@@ -18,12 +17,8 @@ export const AboutRoad = ({ aboutRoadData }) => {
         <Row style={{ flexWrap: "wrap-reverse" }}>
           <Col
             className="about-container"
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
+            span={24}
             lg={{ span: 12 }}
-            xl={{ span: 12 }}
-            xxl={{ span: 12 }}
             style={{
               padding: xs ? "40px 30px 50px" : "60px 60px 70px",
             }}
@@ -46,9 +41,8 @@ export const AboutRoad = ({ aboutRoadData }) => {
           </Col>
           <Col
             className="road-container"
-            offset={0}
             span={24}
-            lg={{ offset: 2, span: 8 }}
+            lg={{ offset: 2, span: 10 }}
           >
             <h4>Road to be a devplus</h4>
             <ul>

@@ -19,7 +19,7 @@ import { useGetCampus } from "../hooks/useCampus";
 import { Campus } from "../components/Campus";
 import { useGetSkills } from "../hooks/useGetSkills";
 import { useGetConserns } from "../hooks/useGetConcerns";
-import { Headernav } from "../components/headernav";
+import { Headernav } from "../components/Headernav";
 import { useGetGalleries } from "../hooks/useGetGalleries";
 
 const Home = () => {
