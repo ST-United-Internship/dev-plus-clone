@@ -7,5 +7,4 @@ export const API_URL = {
   ADMIN: "admin",
   SKILLS: "skills",
   CONCERNS: "concerns",
-  GALLERIES: "galleries",
 };

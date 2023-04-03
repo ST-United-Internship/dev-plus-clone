@@ -32,7 +32,3 @@ export const getSkillsAPI = () => {
 export const getConserns = () => {
   return axios.get(API_URL.CONCERNS);
 };
-
-export const getGalleriesAPI = () => {
-  return axios.get(API_URL.GALLERIES);
-};

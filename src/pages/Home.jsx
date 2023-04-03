@@ -19,8 +19,6 @@ import { useGetCampus } from "../hooks/useCampus";
 import { Campus } from "../components/Campus";
 import { useGetSkills } from "../hooks/useGetSkills";
 import { useGetConserns } from "../hooks/useGetConcerns";
-import { Headernav } from "../components/headernav";
-import { useGetGalleries } from "../hooks/useGetGalleries";
 
 const Home = () => {
   useEffect(() => {
@@ -43,8 +41,6 @@ const Home = () => {
 
   const { data: concerns, isLoading: loadConcerns } = useGetConserns();
 
-  const { data: galleries, isLoading: loadGalleries } = useGetGalleries();
-
   if (
     loadStories ||
     loadBanner ||
@@ -53,14 +49,12 @@ const Home = () => {
     loadCampusData ||
     loadAdmin ||
     loadSkills ||
-    loadConcerns ||
-    loadGalleries
+    loadConcerns
   )
     return <Loading />;
 
   return (
     <>
-      <Headernav galleries={galleries} />
       <HomeBanner homeBannerData={homeBannerData} />
       <AboutRoad aboutRoadData={aboutRoadData} />
       <SkillGrid skills={skills} />
