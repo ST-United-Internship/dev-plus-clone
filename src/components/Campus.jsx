@@ -26,12 +26,9 @@ export const Campus = ({ campusData }) => {
             <Col
               data-aos="fade-up"
               data-aos-delay={`${(index + 3) * 100}`}
-              xs={{ span: 24 }}
-              sm={{ span: 24 }}
+              span={24}
               md={{ span: 12 }}
-              lg={{ span: 12 }}
-              xl={{ span: 12 }}
-              xxl={{ span: 12 }}
+              lg={{ span: 8 }}
               key={index}
             >
               <div className="course-item">
