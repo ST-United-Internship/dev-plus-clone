@@ -194,5 +194,14 @@
       "question": "Does Devplus guarantee a job after graduating?",
       "answer": "Yes, it's could be a good job. Once you get the second plus (++) you will ready to onboard the projects of our partners, the most highly recommended places to work."
     }
+  ],
+
+  "galleries": [
+    { "id": 1, "src": "https://devplus.edu.vn/assets/images/devplus/1.png" },
+    { "id": 2, "src": "https://devplus.edu.vn/assets/images/devplus/2.png" },
+    { "id": 3, "src": "https://devplus.edu.vn/assets/images/devplus/3.png" },
+    { "id": 4, "src": "https://devplus.edu.vn/assets/images/devplus/4.png" },
+    { "id": 5, "src": "https://devplus.edu.vn/assets/images/devplus/5.png" },
+    { "id": 6, "src": "https://devplus.edu.vn/assets/images/devplus/6.png" }
   ]
 }
